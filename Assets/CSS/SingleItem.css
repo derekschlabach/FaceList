@@ -1,0 +1,111 @@
+body { padding: 0px;
+       margin: 0px;
+       background: darkorange;
+       font-family:"Arial", sans-serif;
+       font-size: 90%; }
+
+#header { height: 47px;
+          width: 100%;
+          background: blue;
+          border-bottom: 1px solid #AAA;
+          overflow: hidden; }
+
+#linkBox { margin: 11px;
+           margin-left: 20px;
+           padding-left: 6px;
+           padding-right: 6px;
+           float: left;
+           height: 22px;
+           border: 1px solid black;
+           background: #EEE;
+           border-radius: 6px;
+           font-size: 120%;
+           text-align: center; }
+
+#replyMenu { position: absolute;
+               left: 310px;
+               top: 90px;
+               z-index: 1;
+               height: 200px;
+               width: 100px;
+               background: white;
+               visibility: hidden;
+               border: 1px solid black;
+               border-radius: 6px;
+}
+
+#postButton { float:right;
+              height: 22px;
+              margin: 11px;
+              margin-right: 40px;
+              width: 50px;
+              border: 1px solid black;
+              background: #EEE;
+              border-radius: 6px;
+              font-size: 120%;
+              text-align: center; }
+
+#main { height: 100%;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #EEE;
+        padding-bottom: 40px;
+        margin-bottom: 20px; }
+
+#picFrame { height: 500px;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #EEE;
+            border: 1px solid #CCC; }
+
+#topOptions { height: 50px;
+              width: 100%; }
+
+#replyButton { float: left;
+               margin: 8px;
+               margin-left: 20px;
+               font-size: 110%;
+               background: white;
+               border-radius: 6px; }
+
+#picTitleBox { float: left;
+            height: 30px;
+            width: 500px;
+            margin-bottom: 8px;
+            margin-left: 20px;
+            margin-top: 4px; }
+
+#posted { float: right;
+          height: 50px;
+          width: 100px;
+          padding-top: 10px;
+          text-align: center; }
+
+#picSelector { float: left;
+               margin-left: 100px;
+               margin-right: 100px;
+               height: 100%;
+               width: 500px; }
+
+.picSelectionBox {float: left;
+                  height: 40px;
+                  width: 40px;
+                  border: 2px solid #EEE; }
+
+.picSelectionBox:hover {cursor: pointer; }
+
+.picSelection { max-height: 100%;
+                max-width: 100%; }
+
+#mainPic { max-height : 100%;
+           max-width : 100%; }
+
+#itemInfo { margin-left: 100px;
+            margin-right: 100px; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+a:visited { color: blue; }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FaceList</title>
+    <link rel="stylesheet" type="text/css" href="../Assets/CSS/Submission.css">
+    <script>
+        
+        function changeSelect(x) {
+            var forSale = document.getElementById("forSaleList");
+            var community = document.getElementById("communityList");
+            if (x.selectedIndex === 1) {
+                forSale.style.display = "none";
+                community.style.display = "inline";
+            } else if (x.selectedIndex === 0) {
+                forSale.style.display = "inline";
+                community.style.display = "none";
+            }
+        }
+        
+        function fone1(x) {
+            if (x.value.length === 3)
+                document.getElementById("phone2").focus();
+        }
+        
+        function fone2(x) {
+            if (x.value.length === 3)
+                document.getElementById("phone3").focus();
+        }
+        
+    </script>
+    
+</head>
+
+<body>
+    <div id="header">
+        <div id="linkBox">
+            <a href="FaceList.html" >FaceList ></a>
+            <a href="Submission.html" id="broadCategory">Post</a>
+        </div>
+    </div>
+    <form action = "SubmitForm.php" method="post" enctype="multipart/form-data">
+        <div id="topBox">
+            <div class="topInfo">
+                Posting Title:<br>
+                <input type="text" name="postingTitle" style="width: 260px" required>
+            </div>
+            <div class="topInfo">
+                Price:<br>
+                <strong>$</strong><input type="text" name="price" style="width: 40px;" required>
+            </div>
+            <div class="topInfo">
+                Location:<br>
+                <input type="text" name="location" placeholder="eg. Fischer, Terrace, etc.">
+            </div>
+        </div>
+        <div id="uploadBox">
+            <span style="margin-left: 16px"> Upload Pictures:<br></span>
+            <input type="file" style="margin-left: 16px" name="pictures[]" id="pictures" multiple><br>   
+        </div>
+        <div id="catBox">
+        Category:<br>
+                            
+                    <select name="broad" onchange="changeSelect(this)">
+                        <option value="forSale">For Sale</option>
+                        <option value="community">Community</option>
+                    </select>  
+                    <select name="forSaleList" id="forSaleList">
+                            <option value="bikes">Bikes</option>
+                            <option value="books">Books</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="free">Free</option>
+                            <option value="furniture">Furniture</option>
+                            <option value="general">General</option>
+                            <option value="household">Household</option>
+                            <option value="jewelry">Jewelry</option>
+                            <option value="musical_instruments">Musical Instruments</option>
+                            <option value="photo+video">Photo & Video</option>
+                            <option value="sporting">Sporting</option>
+                            <option value="tickets">Tickets</option>
+                            <option value="toys+games">Toys & Games</option>
+                            <option value="video_games">Video Games</option>
+                            <option value="wanted">Wanted</option>
+                    </select>
+                    <select name="communityList" id="communityList">
+                            <option value="activities">Activities</option>
+                            <option value="artists">Artists</option>
+                            <option value="events">Events</option>
+                            <option value="general">General</option>
+                            <option value="housing">Housing</option>
+                            <option value="jobs">Jobs</option>
+                            <option value="lost+found">Lost & Found</option>
+                            <option value="musicians">Musicians</option>
+                            <option value="rideshare">Rideshare</option>
+                            <option value="sports">Sports</option>
+                    </select>
+        </div>
+        <br><br>
+        <div id="postBodyBox">
+            <div style="margin: 8px">
+                Posting Body:<br>
+                <textarea name="postingBody" style="width: 90%; height: 250px;" required></textarea>
+            </div>
+        </div>
+        <div id="bottomBox">
+            <div id="accountBox">
+                <div style="margin: 8px;">
+                    Username:<br>
+                    <input type="text" name="username" style="width: 90%;" required>
+                    Password:<br>
+                    <input type="password" name="password" style="width:90%;" required>
+                </div>
+            </div>
+            <div id="phoneBox">
+                <div style="margin: 8px;">
+                    Contact me via call or text:<br>
+                    <input type="checkbox" name="call">call
+                    <input type="checkbox" name="text">text<br>
+                    Phone:
+                    (<input type="tel" oninput="fone1(this)" name="phone1" id="phone1" size="3" maxlength="3" required>)
+                    <input type="tel" oninput="fone2(this)" name="phone2" id="phone2" size="3" maxlength="3" required> -
+                    <input type="tel" name="phone3" size="4" id="phone3" maxlength="4" required>
+                </div>
+            </div>
+            
+            <input type="submit" style="margin: 8px; float: right; height: 60px; width: 80px; ">
+        </div>
+    </form>
+</body>
+</html>

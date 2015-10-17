@@ -1,0 +1,114 @@
+body{background:darkorange;
+     color:#222;
+     font-family:"Arial",sans-serif;
+     margin: 0px; }
+
+div { margin: 6px;
+      background: #EEE;
+      border: 1px hidden #AAA; }
+
+#body { height: 500px;
+        width: 830px;
+        background: darkorange;
+        margin: none;
+        margin-left: auto;
+        margin-right: auto; }
+
+#sidebar1 { height: 100%;
+            width: 14.2%;
+            margin-left: 0px;
+            border-left-style: solid;
+            border-right-style: solid;
+            float: left; }
+#main { background: darkorange;
+        height: 100%;
+        width: 69.6%;
+        background: white;
+        margin:0px;
+        margin-top: 0px;
+        float: left; }
+#sidebar2 { height: 100%;
+            width: 14.2%;
+            margin-right: 0px;
+            border-left-style: solid;
+            border-right-style: solid;
+            float: left; }
+
+#header { height: 8.6%;
+          width: 97.4%;
+          border-top-style: solid;
+          border-bottom-style: solid; }
+#categories { height: 69.8%;
+              width: 100%;
+              margin: 0px;
+              background: white; }
+#footer { background:blue;
+          height: 20%;
+          width: 100%;
+          margin: 0px;
+          border-top-style: solid }
+
+#navHeader { height: 47px;
+            width: 100%;
+            background: blue;
+            border-bottom: 1px solid #AAA;
+            overflow: hidden;
+            margin: 0px; }
+
+#linkBox { margin: 11px;
+           margin-left: 20px;
+           float: left;
+           height: 22px;
+           padding-left: 6px;
+           padding-right: 6px;
+           border: 1px solid black;
+           background: #EEE;
+           border-radius: 6px;
+           font-size: 120%;
+           text-align: center; }
+
+#postButton { float:right;
+              height: 22px;
+              margin: 11px;
+              margin-right: 40px;
+              width: 50px;
+              border: 1px solid black;
+              background: #EEE;
+              border-radius: 6px;
+              font-size: 120%;
+              text-align: center; }
+
+#categoryColumn { background: darkorange;
+                  margin: 0px;
+                  height: 100%;
+                  width: 49.6%;
+                  float: left;
+                  background: white; }
+
+#categoryTitle { margin: 6px;
+                 background: #EEE;
+                 border: 1px hidden #AAA;
+                 margin-bottom: 0px;
+                 border-top-style: solid;
+                 border-bottom-style: solid;
+                 text-align: center; }
+
+html {margin: 0px; }
+
+ul { margin: 6px;
+     width: 97.4%;
+     padding: 0px;
+     list-style: none outside none; }
+
+li { border-bottom: 1px solid #AAA;
+     width: 100%;
+     font-size: 74%; }
+
+li:hover, #categoryTitle:hover { background: #CCC;
+                                 border-bottom-color: #888;
+                                 color: purple; }
+
+img { margin-left: auto;
+      margin-right: auto;}
+
+a {text-decoration: none; }
