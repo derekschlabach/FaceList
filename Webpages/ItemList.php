@@ -8,7 +8,7 @@
     
     $db = new SQLite3("db/main.db");
     
-    // Construct a query based on passed paramaters
+    // Construct a query based on passed paramater(s)
     if (isset($_GET["broadcat"])) {
         $broadcat = $_GET["broadcat"];
         $query = 'SELECT * FROM Post WHERE BroadCat="' . $broadcat . '"';
